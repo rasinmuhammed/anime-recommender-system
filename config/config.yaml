@@ -1,0 +1,13 @@
+data_ingestion:
+  bucket_name: "anime-recommendersystem"
+  bucket_file_name:
+   - "anime.csv"
+   - "anime_with_synopsis.csv"
+   - "animelist.csv"
+
+model:
+  embedding_size: 128
+  loss: "binary_crossentropy"
+  optimizer: "Adam"
+  metrics: ["mae", "mse"]
+  

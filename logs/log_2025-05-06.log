@@ -1,0 +1,9 @@
+2025-05-06 08:37:48,724 - INFO - YAML file config/config.yaml loaded successfully.
+2025-05-06 08:37:48,725 - INFO - Initializing Data Ingestion
+2025-05-06 08:37:48,725 - INFO - Running Data Ingestion
+2025-05-06 08:37:48,725 - INFO - Downloading data from GCS
+2025-05-06 08:37:54,481 - INFO - Downloaded anime.csv to artifacts/raw/anime.csv
+2025-05-06 08:37:56,817 - INFO - Downloaded anime_with_synopsis.csv to artifacts/raw/anime_with_synopsis.csv
+2025-05-06 08:39:42,166 - INFO - Downloaded animelist.csv to artifacts/raw/animelist.csv
+2025-05-06 08:39:52,159 - INFO - Large file detected. Downloading first 8 million rows of animelist.csv
+2025-05-06 08:39:52,165 - INFO - Data Ingestion completed successfully

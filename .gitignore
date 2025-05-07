@@ -1,0 +1,8 @@
+venv/
+artifacts/raw/
+artifacts/processed/
+artifacts/model/
+artifacts/weights/
+artifacts/model_checkpoint/
+ANIME_RECOMMENDATION_SYSTEM.egg-info/
+
