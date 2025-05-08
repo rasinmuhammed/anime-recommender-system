@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: anime-recommender-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: anime-recommender-app
+  template:
+    metadata:
+      labels:
+        app: anime-recommender-app
+    spec:
+      containers:
+      - name: ml-app-container
+        image: gcr.io/vast-art-454104-f1/anime-recommender-system:latest
+        ports:
+        - containerPort: 5001  # Replace with the port your app listens on
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-app-service
+spec:
+  type: LoadBalancer
+  selector:
+    app: ml-app
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 5000
