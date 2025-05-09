@@ -13,10 +13,10 @@
 
 <div align="center">
     <img src="https://img.shields.io/maintenance/yes/2025" />
-    <img src="https://img.shields.io/github/stars/rasinmuhammed/reccu?style=social" />
-    <img src="https://img.shields.io/github/forks/rasinmuhammed/reccu?style=social" />
-    <img src="https://img.shields.io/github/issues/rasinmuhammed/reccu" />
-    <img src="https://img.shields.io/github/license/rasinmuhammed/reccu" />
+    <img src="https://img.shields.io/github/stars/rasinmuhammed/anime-recommender-system?style=social" />
+    <img src="https://img.shields.io/github/forks/rasinmuhammed/anime-recommender-system?style=social" />
+    <img src="https://img.shields.io/github/issues/rasinmuhammed/anime-recommender-system" />
+    <img src="https://img.shields.io/github/license/rasinmuhammed/anime-recommender-system" />
 </div>
 
 <br />
