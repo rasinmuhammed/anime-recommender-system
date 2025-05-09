@@ -225,3 +225,28 @@
 2025-05-09 10:06:54,525 - INFO - 127.0.0.1 - - [09/May/2025 10:06:54] "GET / HTTP/1.1" 200 -
 2025-05-09 10:06:54,556 - INFO - 127.0.0.1 - - [09/May/2025 10:06:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
 2025-05-09 10:06:54,568 - INFO - 127.0.0.1 - - [09/May/2025 10:06:54] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-09 14:50:24,773 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-09 14:50:24,975 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-09 14:50:24,975 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-09 14:50:24,976 - INFO -  * Restarting with stat
+2025-05-09 14:50:25,595 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-09 14:50:25,610 - WARNING -  * Debugger is active!
+2025-05-09 14:50:25,625 - INFO -  * Debugger PIN: 357-695-789
+2025-05-09 14:50:40,496 - INFO - 127.0.0.1 - - [09/May/2025 14:50:40] "GET / HTTP/1.1" 200 -
+2025-05-09 14:50:40,554 - INFO - 127.0.0.1 - - [09/May/2025 14:50:40] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-09 14:50:40,848 - INFO - 127.0.0.1 - - [09/May/2025 14:50:40] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-09 14:50:41,230 - INFO - 127.0.0.1 - - [09/May/2025 14:50:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-09 14:50:48,941 - INFO - 127.0.0.1 - - [09/May/2025 14:50:48] "GET /search_anime?q=naruto HTTP/1.1" 200 -
+2025-05-09 14:50:50,561 - INFO - 127.0.0.1 - - [09/May/2025 14:50:50] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-09 14:50:50,566 - INFO - 127.0.0.1 - - [09/May/2025 14:50:50] "GET / HTTP/1.1" 200 -
+2025-05-09 14:50:50,584 - INFO - 127.0.0.1 - - [09/May/2025 14:50:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 14:50:50,590 - INFO - 127.0.0.1 - - [09/May/2025 14:50:50] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-09 14:50:52,400 - INFO - 127.0.0.1 - - [09/May/2025 14:50:52] "POST / HTTP/1.1" 200 -
+2025-05-09 14:50:52,417 - INFO - 127.0.0.1 - - [09/May/2025 14:50:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 14:50:52,422 - INFO - 127.0.0.1 - - [09/May/2025 14:50:52] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-09 14:53:29,320 - INFO - 127.0.0.1 - - [09/May/2025 14:53:29] "POST / HTTP/1.1" 200 -
+2025-05-09 14:53:29,382 - INFO - 127.0.0.1 - - [09/May/2025 14:53:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-09 14:53:29,387 - INFO - 127.0.0.1 - - [09/May/2025 14:53:29] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -

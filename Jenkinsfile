@@ -8,7 +8,8 @@ pipeline {
         KUBECTL_AUTH_PLUGIN = '/usr/lib/google-cloud-sdk/bin'
     }
 
-    stage("Cleanup Workspace & Docker Cache") {
+    stages {
+        stage("Cleanup Workspace & Docker Cache") {
             steps {
                 script {
                     echo "Cleaning workspace and Docker cache"
@@ -20,22 +21,26 @@ pipeline {
             }
         }
 
-
-    stages {
-        stage("Cloning from Github"){
-            steps{
+        stage("Cloning from Github") {
+            steps {
                 script {
                     echo "Cloning from Github"
-                    checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-token', url: 'https://github.com/rasinmuhammed/anime-recommender-system.git']])
+                    checkout scmGit(
+                        branches: [[name: '*/main']],
+                        extensions: [],
+                        userRemoteConfigs: [[
+                            credentialsId: 'github-token',
+                            url: 'https://github.com/rasinmuhammed/anime-recommender-system.git'
+                        ]]
+                    )
                 }
             }
         }
 
-        stage("Making a virtual environment"){
-            steps{
+        stage("Making a virtual environment") {
+            steps {
                 script {
                     echo "Making a virtual environment"
-
                     sh '''
                     python -m venv ${VENV_DIR}
                     . ${VENV_DIR}/bin/activate
@@ -43,13 +48,12 @@ pipeline {
                     pip install -e .
                     pip install dvc
                     '''
-                   
                 }
             }
         }
 
-        stage('DVC Pull'){
-            steps{
+        stage("DVC Pull") {
+            steps {
                 withCredentials([file(credentialsId: 'gcp-key2', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     script {
                         echo "Pulling data from DVC"
@@ -62,8 +66,8 @@ pipeline {
             }
         }
 
-        stage('Build and Push Docker Image to GCR'){
-            steps{
+        stage("Build and Push Docker Image to GCR") {
+            steps {
                 withCredentials([file(credentialsId: 'gcp-key2', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     script {
                         echo "Build and Push Docker Image to GCR"
@@ -83,11 +87,11 @@ pipeline {
             }
         }
 
-        stage('Deploying to Kubernetes'){
-            steps{
+        stage("Deploying to Kubernetes") {
+            steps {
                 withCredentials([file(credentialsId: 'gcp-key2', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     script {
-                        echo "Deploying to Kubernetes'"
+                        echo "Deploying to Kubernetes"
                         sh '''
                         export PATH=$PATH:${GCLOUD_PATH}:${KUBECTL_AUTH_PLUGIN}
                         gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
@@ -100,5 +104,4 @@ pipeline {
             }
         }
     }
-
 }
