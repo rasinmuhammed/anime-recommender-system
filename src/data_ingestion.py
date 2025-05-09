@@ -33,9 +33,9 @@ class DataIngestion:
                     blob.download_to_filename(file_path)
                     logger.info(f"Downloaded {file_name} to {file_path}")
 
-                    data = pd.read_csv(file_path, nrows=8000000)
+                    data = pd.read_csv(file_path, nrows=55000000)
                     data.to_csv(file_path, index=False)
-                    logger.info(f"Large file detected. Downloading first 8 million rows of {file_name}")
+                    logger.info(f"Large file detected. Downloading first 55 million rows of {file_name}")
 
                 else:
                     blob = bucket.blob(file_name)

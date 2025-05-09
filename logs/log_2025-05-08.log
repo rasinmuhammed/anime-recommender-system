@@ -1,0 +1,537 @@
+2025-05-08 20:17:56,929 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:17:57,024 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 20:17:57,024 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 20:17:57,025 - INFO -  * Restarting with stat
+2025-05-08 20:17:57,686 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:17:57,700 - WARNING -  * Debugger is active!
+2025-05-08 20:17:57,709 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:21:53,341 - INFO - 127.0.0.1 - - [08/May/2025 20:21:53] "GET / HTTP/1.1" 200 -
+2025-05-08 20:21:53,657 - INFO - 127.0.0.1 - - [08/May/2025 20:21:53] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:21:53,871 - INFO - 127.0.0.1 - - [08/May/2025 20:21:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-05-08 20:22:05,002 - INFO - 127.0.0.1 - - [08/May/2025 20:22:05] "GET /search_anime?q=sffs HTTP/1.1" 200 -
+2025-05-08 20:22:13,650 - INFO - 127.0.0.1 - - [08/May/2025 20:22:13] "GET /search_anime?q=One HTTP/1.1" 200 -
+2025-05-08 20:22:17,420 - INFO - 127.0.0.1 - - [08/May/2025 20:22:17] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:22:17,428 - INFO - 127.0.0.1 - - [08/May/2025 20:22:17] "GET / HTTP/1.1" 200 -
+2025-05-08 20:22:17,445 - INFO - 127.0.0.1 - - [08/May/2025 20:22:17] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:22:26,028 - INFO - 127.0.0.1 - - [08/May/2025 20:22:26] "POST / HTTP/1.1" 200 -
+2025-05-08 20:22:26,038 - INFO - 127.0.0.1 - - [08/May/2025 20:22:26] "[33mGET /api/placeholder/250/150 HTTP/1.1[0m" 404 -
+2025-05-08 20:22:26,042 - INFO - 127.0.0.1 - - [08/May/2025 20:22:26] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:22:56,328 - INFO - 127.0.0.1 - - [08/May/2025 20:22:56] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:22:56,336 - INFO - 127.0.0.1 - - [08/May/2025 20:22:56] "GET / HTTP/1.1" 200 -
+2025-05-08 20:22:56,352 - INFO - 127.0.0.1 - - [08/May/2025 20:22:56] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:25:35,659 - ERROR - Error getting user-based recommendations: cannot import name 'find_similar_users' from 'utils' (/Users/muhammedrasin/anime-recommender/utils/__init__.py)
+2025-05-08 20:25:35,660 - INFO - 127.0.0.1 - - [08/May/2025 20:25:35] "POST / HTTP/1.1" 200 -
+2025-05-08 20:25:35,698 - INFO - 127.0.0.1 - - [08/May/2025 20:25:35] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:25:43,656 - ERROR - Error getting user-based recommendations: cannot import name 'find_similar_users' from 'utils' (/Users/muhammedrasin/anime-recommender/utils/__init__.py)
+2025-05-08 20:25:43,657 - INFO - 127.0.0.1 - - [08/May/2025 20:25:43] "POST / HTTP/1.1" 200 -
+2025-05-08 20:25:43,677 - INFO - 127.0.0.1 - - [08/May/2025 20:25:43] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:25:48,637 - ERROR - Error getting user-based recommendations: cannot import name 'find_similar_users' from 'utils' (/Users/muhammedrasin/anime-recommender/utils/__init__.py)
+2025-05-08 20:25:48,637 - INFO - 127.0.0.1 - - [08/May/2025 20:25:48] "POST / HTTP/1.1" 200 -
+2025-05-08 20:25:48,656 - INFO - 127.0.0.1 - - [08/May/2025 20:25:48] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:26:33,645 - ERROR - Error getting user-based recommendations: cannot import name 'find_similar_users' from 'utils' (/Users/muhammedrasin/anime-recommender/utils/__init__.py)
+2025-05-08 20:26:33,646 - INFO - 127.0.0.1 - - [08/May/2025 20:26:33] "POST / HTTP/1.1" 200 -
+2025-05-08 20:26:33,674 - INFO - 127.0.0.1 - - [08/May/2025 20:26:33] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:29:26,362 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:26,463 - INFO -  * Restarting with stat
+2025-05-08 20:29:27,879 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:27,902 - WARNING -  * Debugger is active!
+2025-05-08 20:29:27,911 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:29:28,941 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:29,085 - INFO -  * Restarting with stat
+2025-05-08 20:29:29,762 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:29,780 - WARNING -  * Debugger is active!
+2025-05-08 20:29:29,793 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:29:31,843 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:31,918 - INFO -  * Restarting with stat
+2025-05-08 20:29:32,580 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:32,595 - WARNING -  * Debugger is active!
+2025-05-08 20:29:32,602 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:29:33,630 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:33,710 - INFO -  * Restarting with stat
+2025-05-08 20:29:34,404 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:34,420 - WARNING -  * Debugger is active!
+2025-05-08 20:29:34,433 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:29:37,521 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:37,610 - INFO -  * Restarting with stat
+2025-05-08 20:29:38,431 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:38,446 - WARNING -  * Debugger is active!
+2025-05-08 20:29:38,457 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:29:39,490 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:39,570 - INFO -  * Restarting with stat
+2025-05-08 20:29:40,190 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:40,205 - WARNING -  * Debugger is active!
+2025-05-08 20:29:40,214 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:29:53,407 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/helpers.py', reloading
+2025-05-08 20:29:53,563 - INFO -  * Restarting with stat
+2025-05-08 20:29:54,338 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:29:54,356 - WARNING -  * Debugger is active!
+2025-05-08 20:29:54,364 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:30:01,478 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/application.py', reloading
+2025-05-08 20:30:01,553 - INFO -  * Restarting with stat
+2025-05-08 20:37:59,539 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:37:59,570 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 20:37:59,570 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 20:37:59,570 - INFO -  * Restarting with stat
+2025-05-08 20:38:00,186 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:38:00,200 - WARNING -  * Debugger is active!
+2025-05-08 20:38:00,211 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:38:01,565 - INFO - 127.0.0.1 - - [08/May/2025 20:38:01] "GET / HTTP/1.1" 200 -
+2025-05-08 20:38:01,587 - INFO - 127.0.0.1 - - [08/May/2025 20:38:01] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:38:08,256 - ERROR - Error getting user-based recommendations: 'function' object is not subscriptable
+2025-05-08 20:38:08,257 - INFO - 127.0.0.1 - - [08/May/2025 20:38:08] "POST / HTTP/1.1" 200 -
+2025-05-08 20:38:08,273 - INFO - 127.0.0.1 - - [08/May/2025 20:38:08] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:38:19,492 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/application.py', reloading
+2025-05-08 20:38:19,581 - INFO -  * Restarting with stat
+2025-05-08 20:38:20,356 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 20:38:20,371 - WARNING -  * Debugger is active!
+2025-05-08 20:38:20,380 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 20:38:28,390 - INFO - 127.0.0.1 - - [08/May/2025 20:38:28] "GET /search_anime?q=d%3D HTTP/1.1" 200 -
+2025-05-08 20:38:29,739 - INFO - 127.0.0.1 - - [08/May/2025 20:38:29] "GET /search_anime?q=one HTTP/1.1" 200 -
+2025-05-08 20:38:32,547 - INFO - 127.0.0.1 - - [08/May/2025 20:38:32] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:38:32,560 - INFO - 127.0.0.1 - - [08/May/2025 20:38:32] "GET / HTTP/1.1" 200 -
+2025-05-08 20:38:32,574 - INFO - 127.0.0.1 - - [08/May/2025 20:38:32] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:38:37,470 - INFO - 127.0.0.1 - - [08/May/2025 20:38:37] "GET /search_anime?q=att HTTP/1.1" 200 -
+2025-05-08 20:38:40,724 - INFO - 127.0.0.1 - - [08/May/2025 20:38:40] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:38:40,736 - INFO - 127.0.0.1 - - [08/May/2025 20:38:40] "GET / HTTP/1.1" 200 -
+2025-05-08 20:38:40,750 - INFO - 127.0.0.1 - - [08/May/2025 20:38:40] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:38:42,083 - INFO - 127.0.0.1 - - [08/May/2025 20:38:42] "POST / HTTP/1.1" 200 -
+2025-05-08 20:38:42,109 - INFO - 127.0.0.1 - - [08/May/2025 20:38:42] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:38:42,110 - INFO - 127.0.0.1 - - [08/May/2025 20:38:42] "[33mGET /api/placeholder/250/150 HTTP/1.1[0m" 404 -
+2025-05-08 20:43:14,497 - INFO - 127.0.0.1 - - [08/May/2025 20:43:14] "POST / HTTP/1.1" 200 -
+2025-05-08 20:43:14,518 - INFO - 127.0.0.1 - - [08/May/2025 20:43:14] "[33mGET /api/placeholder/250/150 HTTP/1.1[0m" 404 -
+2025-05-08 20:43:14,521 - INFO - 127.0.0.1 - - [08/May/2025 20:43:14] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:50:39,954 - INFO - 127.0.0.1 - - [08/May/2025 20:50:39] "POST / HTTP/1.1" 200 -
+2025-05-08 20:50:39,971 - INFO - 127.0.0.1 - - [08/May/2025 20:50:39] "GET /static/style.css HTTP/1.1" 200 -
+2025-05-08 20:50:39,977 - INFO - 127.0.0.1 - - [08/May/2025 20:50:39] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:51:50,810 - INFO - 127.0.0.1 - - [08/May/2025 20:51:50] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:51:50,819 - INFO - 127.0.0.1 - - [08/May/2025 20:51:50] "GET / HTTP/1.1" 200 -
+2025-05-08 20:51:50,834 - INFO - 127.0.0.1 - - [08/May/2025 20:51:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:51:50,844 - INFO - 127.0.0.1 - - [08/May/2025 20:51:50] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:51:52,302 - INFO - 127.0.0.1 - - [08/May/2025 20:51:52] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:51:52,315 - INFO - 127.0.0.1 - - [08/May/2025 20:51:52] "GET / HTTP/1.1" 200 -
+2025-05-08 20:51:52,327 - INFO - 127.0.0.1 - - [08/May/2025 20:51:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:51:52,337 - INFO - 127.0.0.1 - - [08/May/2025 20:51:52] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:51:55,428 - INFO - 127.0.0.1 - - [08/May/2025 20:51:55] "GET /search_anime?q=naruto HTTP/1.1" 200 -
+2025-05-08 20:51:57,568 - INFO - 127.0.0.1 - - [08/May/2025 20:51:57] "GET /search_anime?q=Naruto HTTP/1.1" 200 -
+2025-05-08 20:52:00,940 - INFO - 127.0.0.1 - - [08/May/2025 20:52:00] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:52:00,948 - INFO - 127.0.0.1 - - [08/May/2025 20:52:00] "GET / HTTP/1.1" 200 -
+2025-05-08 20:52:00,961 - INFO - 127.0.0.1 - - [08/May/2025 20:52:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:52:00,974 - INFO - 127.0.0.1 - - [08/May/2025 20:52:00] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:52:03,000 - INFO - 127.0.0.1 - - [08/May/2025 20:52:03] "GET /search_anime?q=nar HTTP/1.1" 200 -
+2025-05-08 20:52:06,029 - INFO - 127.0.0.1 - - [08/May/2025 20:52:06] "GET /search_anime?q=naruto HTTP/1.1" 200 -
+2025-05-08 20:52:07,443 - INFO - 127.0.0.1 - - [08/May/2025 20:52:07] "GET /search_anime?q=Naruto HTTP/1.1" 200 -
+2025-05-08 20:52:08,192 - INFO - 127.0.0.1 - - [08/May/2025 20:52:08] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:52:08,200 - INFO - 127.0.0.1 - - [08/May/2025 20:52:08] "GET / HTTP/1.1" 200 -
+2025-05-08 20:52:08,210 - INFO - 127.0.0.1 - - [08/May/2025 20:52:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:52:08,220 - INFO - 127.0.0.1 - - [08/May/2025 20:52:08] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:52:10,816 - INFO - 127.0.0.1 - - [08/May/2025 20:52:10] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 20:52:10,837 - INFO - 127.0.0.1 - - [08/May/2025 20:52:10] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-08 20:52:10,838 - INFO - 127.0.0.1 - - [08/May/2025 20:52:10] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-08 20:52:10,844 - INFO - 127.0.0.1 - - [08/May/2025 20:52:10] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=ihKbJCIEraCV8yXTRTSp HTTP/1.1" 200 -
+2025-05-08 20:52:19,048 - INFO - 127.0.0.1 - - [08/May/2025 20:52:19] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 20:52:19,069 - INFO - 127.0.0.1 - - [08/May/2025 20:52:19] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 20:52:19,070 - INFO - 127.0.0.1 - - [08/May/2025 20:52:19] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:52:19,076 - INFO - 127.0.0.1 - - [08/May/2025 20:52:19] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ihKbJCIEraCV8yXTRTSp HTTP/1.1[0m" 304 -
+2025-05-08 20:52:22,023 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 20:52:22,030 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "GET / HTTP/1.1" 200 -
+2025-05-08 20:52:22,040 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:52:22,047 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:52:22,873 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 20:52:22,883 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 20:52:22,884 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:52:22,891 - INFO - 127.0.0.1 - - [08/May/2025 20:52:22] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=ihKbJCIEraCV8yXTRTSp HTTP/1.1[0m" 304 -
+2025-05-08 20:55:01,100 - INFO - 127.0.0.1 - - [08/May/2025 20:55:01] "POST / HTTP/1.1" 200 -
+2025-05-08 20:55:01,112 - INFO - 127.0.0.1 - - [08/May/2025 20:55:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:55:01,121 - INFO - 127.0.0.1 - - [08/May/2025 20:55:01] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:55:04,202 - INFO - 127.0.0.1 - - [08/May/2025 20:55:04] "POST / HTTP/1.1" 200 -
+2025-05-08 20:55:04,217 - INFO - 127.0.0.1 - - [08/May/2025 20:55:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:55:04,224 - INFO - 127.0.0.1 - - [08/May/2025 20:55:04] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:56:03,604 - INFO - 127.0.0.1 - - [08/May/2025 20:56:03] "POST / HTTP/1.1" 200 -
+2025-05-08 20:56:03,615 - INFO - 127.0.0.1 - - [08/May/2025 20:56:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:56:03,621 - INFO - 127.0.0.1 - - [08/May/2025 20:56:03] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:56:38,975 - INFO - 127.0.0.1 - - [08/May/2025 20:56:38] "POST / HTTP/1.1" 200 -
+2025-05-08 20:56:38,985 - INFO - 127.0.0.1 - - [08/May/2025 20:56:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:56:38,991 - INFO - 127.0.0.1 - - [08/May/2025 20:56:38] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 20:56:55,846 - INFO - 127.0.0.1 - - [08/May/2025 20:56:55] "POST / HTTP/1.1" 200 -
+2025-05-08 20:56:55,857 - INFO - 127.0.0.1 - - [08/May/2025 20:56:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 20:56:55,863 - INFO - 127.0.0.1 - - [08/May/2025 20:56:55] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:00:04,217 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:00:04,311 - INFO -  * Restarting with stat
+2025-05-08 21:00:05,387 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:00:05,412 - WARNING -  * Debugger is active!
+2025-05-08 21:00:05,423 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:00:09,495 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:00:09,574 - INFO -  * Restarting with stat
+2025-05-08 21:00:10,191 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:00:10,206 - WARNING -  * Debugger is active!
+2025-05-08 21:00:10,214 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:00:14,292 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:00:14,365 - INFO -  * Restarting with stat
+2025-05-08 21:00:14,999 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:00:15,014 - WARNING -  * Debugger is active!
+2025-05-08 21:00:15,022 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:00:47,496 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/application.py', reloading
+2025-05-08 21:00:47,572 - INFO -  * Restarting with stat
+2025-05-08 21:01:04,231 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:01:04,437 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 21:01:04,437 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 21:01:04,438 - INFO -  * Restarting with stat
+2025-05-08 21:01:05,043 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:01:05,061 - WARNING -  * Debugger is active!
+2025-05-08 21:01:05,069 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:01:06,770 - INFO - 127.0.0.1 - - [08/May/2025 21:01:06] "GET / HTTP/1.1" 200 -
+2025-05-08 21:01:06,786 - INFO - 127.0.0.1 - - [08/May/2025 21:01:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:01:06,800 - INFO - 127.0.0.1 - - [08/May/2025 21:01:06] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:01:09,441 - INFO - 127.0.0.1 - - [08/May/2025 21:01:09] "GET /search_anime?q=naru HTTP/1.1" 200 -
+2025-05-08 21:01:10,202 - INFO - 127.0.0.1 - - [08/May/2025 21:01:10] "GET /search_anime?q=naruto HTTP/1.1" 200 -
+2025-05-08 21:01:11,875 - INFO - 127.0.0.1 - - [08/May/2025 21:01:11] "GET /search_anime?q=Naruto HTTP/1.1" 200 -
+2025-05-08 21:01:13,094 - INFO - 127.0.0.1 - - [08/May/2025 21:01:13] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:01:13,101 - INFO - 127.0.0.1 - - [08/May/2025 21:01:13] "GET / HTTP/1.1" 200 -
+2025-05-08 21:01:13,111 - INFO - 127.0.0.1 - - [08/May/2025 21:01:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:01:13,119 - INFO - 127.0.0.1 - - [08/May/2025 21:01:13] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:01:14,552 - INFO - 127.0.0.1 - - [08/May/2025 21:01:14] "POST / HTTP/1.1" 200 -
+2025-05-08 21:01:14,575 - INFO - 127.0.0.1 - - [08/May/2025 21:01:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:01:14,582 - INFO - 127.0.0.1 - - [08/May/2025 21:01:14] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:02:49,572 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:02:49,653 - INFO -  * Restarting with stat
+2025-05-08 21:02:50,437 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:02:50,454 - WARNING -  * Debugger is active!
+2025-05-08 21:02:50,462 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:02:57,558 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:02:57,634 - INFO -  * Restarting with stat
+2025-05-08 21:02:58,418 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:02:58,437 - WARNING -  * Debugger is active!
+2025-05-08 21:02:58,444 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:03:01,342 - INFO - 127.0.0.1 - - [08/May/2025 21:03:01] "POST / HTTP/1.1" 200 -
+2025-05-08 21:03:01,354 - INFO - 127.0.0.1 - - [08/May/2025 21:03:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:03:01,360 - INFO - 127.0.0.1 - - [08/May/2025 21:03:01] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:03:04,655 - INFO - 127.0.0.1 - - [08/May/2025 21:03:04] "GET /search_anime?q=naru HTTP/1.1" 200 -
+2025-05-08 21:03:07,686 - ERROR - Error getting anime details: 'name'
+2025-05-08 21:03:07,687 - ERROR - Error adding anime to bucket: Error occurred in script: [/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py] at line number: [80] error message: [Failed to get details for anime Naruto]
+2025-05-08 21:03:07,688 - INFO - 127.0.0.1 - - [08/May/2025 21:03:07] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:03:07,696 - INFO - 127.0.0.1 - - [08/May/2025 21:03:07] "GET / HTTP/1.1" 200 -
+2025-05-08 21:03:07,708 - INFO - 127.0.0.1 - - [08/May/2025 21:03:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:03:07,718 - INFO - 127.0.0.1 - - [08/May/2025 21:03:07] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:03:12,163 - INFO - 127.0.0.1 - - [08/May/2025 21:03:12] "GET /search_anime?q=nar HTTP/1.1" 200 -
+2025-05-08 21:03:14,791 - ERROR - Error getting anime details: 'name'
+2025-05-08 21:03:14,791 - ERROR - Error adding anime to bucket: Error occurred in script: [/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py] at line number: [80] error message: [Failed to get details for anime Naruto:Shippuden]
+2025-05-08 21:03:14,792 - INFO - 127.0.0.1 - - [08/May/2025 21:03:14] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:03:14,800 - INFO - 127.0.0.1 - - [08/May/2025 21:03:14] "GET / HTTP/1.1" 200 -
+2025-05-08 21:03:14,812 - INFO - 127.0.0.1 - - [08/May/2025 21:03:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:03:14,827 - INFO - 127.0.0.1 - - [08/May/2025 21:03:14] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:03:21,874 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:03:21,951 - INFO -  * Restarting with stat
+2025-05-08 21:03:22,776 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:03:22,794 - WARNING -  * Debugger is active!
+2025-05-08 21:03:22,803 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:03:24,847 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:03:24,953 - INFO -  * Restarting with stat
+2025-05-08 21:03:25,627 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:03:25,642 - WARNING -  * Debugger is active!
+2025-05-08 21:03:25,649 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:03:26,844 - INFO - 127.0.0.1 - - [08/May/2025 21:03:26] "GET / HTTP/1.1" 200 -
+2025-05-08 21:03:26,856 - INFO - 127.0.0.1 - - [08/May/2025 21:03:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:03:26,864 - INFO - 127.0.0.1 - - [08/May/2025 21:03:26] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:03:31,278 - INFO - 127.0.0.1 - - [08/May/2025 21:03:31] "GET /search_anime?q=atto HTTP/1.1" 200 -
+2025-05-08 21:03:32,439 - INFO - 127.0.0.1 - - [08/May/2025 21:03:32] "GET /search_anime?q=atta HTTP/1.1" 200 -
+2025-05-08 21:03:33,273 - INFO - 127.0.0.1 - - [08/May/2025 21:03:33] "GET /search_anime?q=attac HTTP/1.1" 200 -
+2025-05-08 21:03:38,847 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/utils/anime_bucket.py', reloading
+2025-05-08 21:03:38,924 - INFO -  * Restarting with stat
+2025-05-08 21:03:39,696 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:03:39,714 - WARNING -  * Debugger is active!
+2025-05-08 21:03:39,721 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:03:42,506 - INFO - 127.0.0.1 - - [08/May/2025 21:03:42] "GET /search_anime?q=attack HTTP/1.1" 200 -
+2025-05-08 21:03:44,004 - INFO - 127.0.0.1 - - [08/May/2025 21:03:44] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:03:44,021 - INFO - 127.0.0.1 - - [08/May/2025 21:03:44] "GET / HTTP/1.1" 200 -
+2025-05-08 21:03:44,033 - INFO - 127.0.0.1 - - [08/May/2025 21:03:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:03:44,043 - INFO - 127.0.0.1 - - [08/May/2025 21:03:44] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:03:46,416 - INFO - 127.0.0.1 - - [08/May/2025 21:03:46] "POST / HTTP/1.1" 200 -
+2025-05-08 21:03:46,426 - INFO - 127.0.0.1 - - [08/May/2025 21:03:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:03:46,433 - INFO - 127.0.0.1 - - [08/May/2025 21:03:46] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:04:29,644 - INFO - 127.0.0.1 - - [08/May/2025 21:04:29] "POST / HTTP/1.1" 200 -
+2025-05-08 21:04:29,654 - INFO - 127.0.0.1 - - [08/May/2025 21:04:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:04:29,660 - INFO - 127.0.0.1 - - [08/May/2025 21:04:29] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:05:26,936 - INFO - 127.0.0.1 - - [08/May/2025 21:05:26] "POST / HTTP/1.1" 200 -
+2025-05-08 21:05:26,948 - INFO - 127.0.0.1 - - [08/May/2025 21:05:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:05:26,955 - INFO - 127.0.0.1 - - [08/May/2025 21:05:26] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:06:27,367 - INFO - 127.0.0.1 - - [08/May/2025 21:06:27] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:06:27,376 - INFO - 127.0.0.1 - - [08/May/2025 21:06:27] "GET / HTTP/1.1" 200 -
+2025-05-08 21:06:27,387 - INFO - 127.0.0.1 - - [08/May/2025 21:06:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:06:27,397 - INFO - 127.0.0.1 - - [08/May/2025 21:06:27] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:06:29,843 - INFO - 127.0.0.1 - - [08/May/2025 21:06:29] "GET /search_anime?q=naruto HTTP/1.1" 200 -
+2025-05-08 21:06:31,875 - INFO - 127.0.0.1 - - [08/May/2025 21:06:31] "GET /search_anime?q=Naruto HTTP/1.1" 200 -
+2025-05-08 21:06:35,118 - INFO - 127.0.0.1 - - [08/May/2025 21:06:35] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:06:35,126 - INFO - 127.0.0.1 - - [08/May/2025 21:06:35] "GET / HTTP/1.1" 200 -
+2025-05-08 21:06:35,139 - INFO - 127.0.0.1 - - [08/May/2025 21:06:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:06:35,148 - INFO - 127.0.0.1 - - [08/May/2025 21:06:35] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:06:36,339 - INFO - 127.0.0.1 - - [08/May/2025 21:06:36] "POST / HTTP/1.1" 200 -
+2025-05-08 21:06:36,349 - INFO - 127.0.0.1 - - [08/May/2025 21:06:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:06:36,357 - INFO - 127.0.0.1 - - [08/May/2025 21:06:36] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:18:17,502 - INFO - 127.0.0.1 - - [08/May/2025 21:18:17] "POST / HTTP/1.1" 200 -
+2025-05-08 21:18:17,515 - INFO - 127.0.0.1 - - [08/May/2025 21:18:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:18:17,522 - INFO - 127.0.0.1 - - [08/May/2025 21:18:17] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:21:55,370 - INFO - 127.0.0.1 - - [08/May/2025 21:21:55] "POST / HTTP/1.1" 200 -
+2025-05-08 21:21:55,383 - INFO - 127.0.0.1 - - [08/May/2025 21:21:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:21:55,391 - INFO - 127.0.0.1 - - [08/May/2025 21:21:55] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:27:36,312 - INFO - 127.0.0.1 - - [08/May/2025 21:27:36] "POST / HTTP/1.1" 200 -
+2025-05-08 21:27:36,323 - INFO - 127.0.0.1 - - [08/May/2025 21:27:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:27:36,329 - INFO - 127.0.0.1 - - [08/May/2025 21:27:36] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:27:50,034 - INFO - 127.0.0.1 - - [08/May/2025 21:27:50] "POST / HTTP/1.1" 200 -
+2025-05-08 21:27:50,043 - INFO - 127.0.0.1 - - [08/May/2025 21:27:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:27:50,050 - INFO - 127.0.0.1 - - [08/May/2025 21:27:50] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:28:17,240 - INFO - 127.0.0.1 - - [08/May/2025 21:28:17] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:28:17,248 - INFO - 127.0.0.1 - - [08/May/2025 21:28:17] "GET / HTTP/1.1" 200 -
+2025-05-08 21:28:17,257 - INFO - 127.0.0.1 - - [08/May/2025 21:28:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:28:17,265 - INFO - 127.0.0.1 - - [08/May/2025 21:28:17] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:28:19,381 - INFO - 127.0.0.1 - - [08/May/2025 21:28:19] "GET /search_anime?q=on HTTP/1.1" 200 -
+2025-05-08 21:28:19,836 - INFO - 127.0.0.1 - - [08/May/2025 21:28:19] "GET /search_anime?q=one HTTP/1.1" 200 -
+2025-05-08 21:28:20,560 - INFO - 127.0.0.1 - - [08/May/2025 21:28:20] "GET /search_anime?q=one%20 HTTP/1.1" 200 -
+2025-05-08 21:28:22,899 - INFO - 127.0.0.1 - - [08/May/2025 21:28:22] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:28:22,907 - INFO - 127.0.0.1 - - [08/May/2025 21:28:22] "GET / HTTP/1.1" 200 -
+2025-05-08 21:28:22,916 - INFO - 127.0.0.1 - - [08/May/2025 21:28:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:28:22,926 - INFO - 127.0.0.1 - - [08/May/2025 21:28:22] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:28:24,186 - INFO - 127.0.0.1 - - [08/May/2025 21:28:24] "POST / HTTP/1.1" 200 -
+2025-05-08 21:28:24,196 - INFO - 127.0.0.1 - - [08/May/2025 21:28:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:28:24,208 - INFO - 127.0.0.1 - - [08/May/2025 21:28:24] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:28:30,197 - INFO - 127.0.0.1 - - [08/May/2025 21:28:30] "POST / HTTP/1.1" 200 -
+2025-05-08 21:28:30,206 - INFO - 127.0.0.1 - - [08/May/2025 21:28:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:28:30,214 - INFO - 127.0.0.1 - - [08/May/2025 21:28:30] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:29:59,973 - INFO - 127.0.0.1 - - [08/May/2025 21:29:59] "POST / HTTP/1.1" 200 -
+2025-05-08 21:29:59,983 - INFO - 127.0.0.1 - - [08/May/2025 21:29:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:29:59,989 - INFO - 127.0.0.1 - - [08/May/2025 21:29:59] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:30:05,731 - INFO - 127.0.0.1 - - [08/May/2025 21:30:05] "POST / HTTP/1.1" 200 -
+2025-05-08 21:30:05,743 - INFO - 127.0.0.1 - - [08/May/2025 21:30:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:30:05,749 - INFO - 127.0.0.1 - - [08/May/2025 21:30:05] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:32:50,925 - INFO - 127.0.0.1 - - [08/May/2025 21:32:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 21:32:50,933 - INFO - 127.0.0.1 - - [08/May/2025 21:32:50] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-05-08 21:32:50,933 - INFO - 127.0.0.1 - - [08/May/2025 21:32:50] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-05-08 21:32:50,943 - INFO - 127.0.0.1 - - [08/May/2025 21:32:50] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=c1VzvkBdwYKoY0VR2yWg HTTP/1.1" 200 -
+2025-05-08 21:33:30,522 - INFO - 127.0.0.1 - - [08/May/2025 21:33:30] "POST / HTTP/1.1" 200 -
+2025-05-08 21:33:30,534 - INFO - 127.0.0.1 - - [08/May/2025 21:33:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:33:30,544 - INFO - 127.0.0.1 - - [08/May/2025 21:33:30] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:34:43,956 - INFO - 127.0.0.1 - - [08/May/2025 21:34:43] "POST / HTTP/1.1" 200 -
+2025-05-08 21:34:43,966 - INFO - 127.0.0.1 - - [08/May/2025 21:34:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:34:43,972 - INFO - 127.0.0.1 - - [08/May/2025 21:34:43] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:35:55,036 - INFO - 127.0.0.1 - - [08/May/2025 21:35:55] "POST / HTTP/1.1" 200 -
+2025-05-08 21:35:55,047 - INFO - 127.0.0.1 - - [08/May/2025 21:35:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:35:55,052 - INFO - 127.0.0.1 - - [08/May/2025 21:35:55] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:38:24,356 - INFO - 127.0.0.1 - - [08/May/2025 21:38:24] "POST / HTTP/1.1" 200 -
+2025-05-08 21:38:24,390 - INFO - 127.0.0.1 - - [08/May/2025 21:38:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:38:24,405 - INFO - 127.0.0.1 - - [08/May/2025 21:38:24] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:39:00,037 - INFO - 127.0.0.1 - - [08/May/2025 21:39:00] "[32mPOST /remove_from_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:39:00,054 - INFO - 127.0.0.1 - - [08/May/2025 21:39:00] "GET / HTTP/1.1" 200 -
+2025-05-08 21:39:00,064 - INFO - 127.0.0.1 - - [08/May/2025 21:39:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:39:00,073 - INFO - 127.0.0.1 - - [08/May/2025 21:39:00] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:39:01,842 - INFO - 127.0.0.1 - - [08/May/2025 21:39:01] "GET /search_anime?q=de HTTP/1.1" 200 -
+2025-05-08 21:39:02,400 - INFO - 127.0.0.1 - - [08/May/2025 21:39:02] "GET /search_anime?q=demo HTTP/1.1" 200 -
+2025-05-08 21:39:07,968 - INFO - 127.0.0.1 - - [08/May/2025 21:39:07] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 21:39:07,976 - INFO - 127.0.0.1 - - [08/May/2025 21:39:07] "GET / HTTP/1.1" 200 -
+2025-05-08 21:39:07,986 - INFO - 127.0.0.1 - - [08/May/2025 21:39:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:39:07,993 - INFO - 127.0.0.1 - - [08/May/2025 21:39:07] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:39:08,948 - INFO - 127.0.0.1 - - [08/May/2025 21:39:08] "POST / HTTP/1.1" 200 -
+2025-05-08 21:39:08,958 - INFO - 127.0.0.1 - - [08/May/2025 21:39:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:39:08,965 - INFO - 127.0.0.1 - - [08/May/2025 21:39:08] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:42:16,526 - INFO - 127.0.0.1 - - [08/May/2025 21:42:16] "POST / HTTP/1.1" 200 -
+2025-05-08 21:42:16,539 - INFO - 127.0.0.1 - - [08/May/2025 21:42:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:42:16,546 - INFO - 127.0.0.1 - - [08/May/2025 21:42:16] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:42:47,364 - INFO - 127.0.0.1 - - [08/May/2025 21:42:47] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 21:42:47,389 - INFO - 127.0.0.1 - - [08/May/2025 21:42:47] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 21:42:47,389 - INFO - 127.0.0.1 - - [08/May/2025 21:42:47] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:42:47,397 - INFO - 127.0.0.1 - - [08/May/2025 21:42:47] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c1VzvkBdwYKoY0VR2yWg HTTP/1.1[0m" 304 -
+2025-05-08 21:44:35,024 - INFO - 127.0.0.1 - - [08/May/2025 21:44:35] "POST / HTTP/1.1" 200 -
+2025-05-08 21:44:35,044 - INFO - 127.0.0.1 - - [08/May/2025 21:44:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:44:35,051 - INFO - 127.0.0.1 - - [08/May/2025 21:44:35] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:46:44,178 - INFO - 127.0.0.1 - - [08/May/2025 21:46:44] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 21:46:44,200 - INFO - 127.0.0.1 - - [08/May/2025 21:46:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 21:46:44,200 - INFO - 127.0.0.1 - - [08/May/2025 21:46:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:46:44,211 - INFO - 127.0.0.1 - - [08/May/2025 21:46:44] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c1VzvkBdwYKoY0VR2yWg HTTP/1.1[0m" 304 -
+2025-05-08 21:47:30,543 - INFO - 127.0.0.1 - - [08/May/2025 21:47:30] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 21:47:30,560 - INFO - 127.0.0.1 - - [08/May/2025 21:47:30] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:47:30,561 - INFO - 127.0.0.1 - - [08/May/2025 21:47:30] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 21:47:30,566 - INFO - 127.0.0.1 - - [08/May/2025 21:47:30] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c1VzvkBdwYKoY0VR2yWg HTTP/1.1[0m" 304 -
+2025-05-08 21:48:13,306 - INFO - 127.0.0.1 - - [08/May/2025 21:48:13] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 21:48:13,320 - INFO - 127.0.0.1 - - [08/May/2025 21:48:13] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:48:13,320 - INFO - 127.0.0.1 - - [08/May/2025 21:48:13] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 21:48:13,326 - INFO - 127.0.0.1 - - [08/May/2025 21:48:13] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=c1VzvkBdwYKoY0VR2yWg HTTP/1.1[0m" 304 -
+2025-05-08 21:51:04,946 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:51:31,355 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:53:05,194 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:53:08,117 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:54:35,422 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:56:05,337 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:56:05,535 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 21:56:05,535 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 21:56:05,536 - INFO -  * Restarting with stat
+2025-05-08 21:56:06,153 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 21:56:06,169 - WARNING -  * Debugger is active!
+2025-05-08 21:56:06,177 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 21:56:25,861 - INFO - 127.0.0.1 - - [08/May/2025 21:56:25] "GET / HTTP/1.1" 200 -
+2025-05-08 21:56:25,882 - INFO - 127.0.0.1 - - [08/May/2025 21:56:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:56:25,894 - INFO - 127.0.0.1 - - [08/May/2025 21:56:25] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 21:56:52,681 - INFO - 127.0.0.1 - - [08/May/2025 21:56:52] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 21:56:52,700 - INFO - 127.0.0.1 - - [08/May/2025 21:56:52] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 21:56:52,700 - INFO - 127.0.0.1 - - [08/May/2025 21:56:52] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 21:56:52,706 - INFO - 127.0.0.1 - - [08/May/2025 21:56:52] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=jPSYdTtcP4YAVOeQWTft HTTP/1.1" 200 -
+2025-05-08 22:04:20,209 - INFO - 127.0.0.1 - - [08/May/2025 22:04:20] "POST / HTTP/1.1" 200 -
+2025-05-08 22:04:20,228 - INFO - 127.0.0.1 - - [08/May/2025 22:04:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:04:20,235 - INFO - 127.0.0.1 - - [08/May/2025 22:04:20] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:15:17,992 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:15:18,093 - INFO -  * Restarting with stat
+2025-05-08 22:15:18,908 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:15:18,926 - WARNING -  * Debugger is active!
+2025-05-08 22:15:18,935 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:15:27,041 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:15:27,112 - INFO -  * Restarting with stat
+2025-05-08 22:15:27,850 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:15:27,867 - WARNING -  * Debugger is active!
+2025-05-08 22:15:27,874 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:15:39,034 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:15:39,107 - INFO -  * Restarting with stat
+2025-05-08 22:15:39,886 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:15:39,901 - WARNING -  * Debugger is active!
+2025-05-08 22:15:39,911 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:15:41,956 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:15:42,030 - INFO -  * Restarting with stat
+2025-05-08 22:15:42,639 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:15:42,654 - WARNING -  * Debugger is active!
+2025-05-08 22:15:42,660 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:15:50,772 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:15:50,841 - INFO -  * Restarting with stat
+2025-05-08 22:15:51,444 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:15:51,461 - WARNING -  * Debugger is active!
+2025-05-08 22:15:51,467 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:16:32,080 - INFO - 127.0.0.1 - - [08/May/2025 22:16:32] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 22:16:32,104 - INFO - 127.0.0.1 - - [08/May/2025 22:16:32] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 22:16:32,104 - INFO - 127.0.0.1 - - [08/May/2025 22:16:32] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:16:32,122 - INFO - 127.0.0.1 - - [08/May/2025 22:16:32] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=F1cg5EhDFehKbQaqKS1X HTTP/1.1" 200 -
+2025-05-08 22:17:48,163 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/tester.py', reloading
+2025-05-08 22:17:48,240 - INFO -  * Restarting with stat
+2025-05-08 22:17:49,099 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:17:49,117 - WARNING -  * Debugger is active!
+2025-05-08 22:17:49,125 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:22:21,320 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:22:21,502 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 22:22:21,503 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 22:22:21,503 - INFO -  * Restarting with stat
+2025-05-08 22:22:22,106 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:22:22,120 - WARNING -  * Debugger is active!
+2025-05-08 22:22:22,130 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:23:08,291 - INFO - 127.0.0.1 - - [08/May/2025 22:23:08] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 22:23:08,321 - INFO - 127.0.0.1 - - [08/May/2025 22:23:08] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:23:08,321 - INFO - 127.0.0.1 - - [08/May/2025 22:23:08] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 22:23:08,328 - INFO - 127.0.0.1 - - [08/May/2025 22:23:08] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=qBPEjYpcrPHxsa6MIfta HTTP/1.1" 200 -
+2025-05-08 22:23:13,090 - INFO - 127.0.0.1 - - [08/May/2025 22:23:13] "GET / HTTP/1.1" 200 -
+2025-05-08 22:23:13,100 - INFO - 127.0.0.1 - - [08/May/2025 22:23:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:23:13,107 - INFO - 127.0.0.1 - - [08/May/2025 22:23:13] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:23:50,053 - INFO - 127.0.0.1 - - [08/May/2025 22:23:50] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 22:23:50,083 - INFO - 127.0.0.1 - - [08/May/2025 22:23:50] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:23:50,083 - INFO - 127.0.0.1 - - [08/May/2025 22:23:50] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 22:23:50,090 - INFO - 127.0.0.1 - - [08/May/2025 22:23:50] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png&s=qBPEjYpcrPHxsa6MIfta HTTP/1.1[0m" 304 -
+2025-05-08 22:28:40,392 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/application.py', reloading
+2025-05-08 22:28:40,513 - INFO -  * Restarting with stat
+2025-05-08 22:28:57,521 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:28:57,674 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 22:28:57,675 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 22:28:57,675 - INFO -  * Restarting with stat
+2025-05-08 22:28:58,274 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:28:58,289 - WARNING -  * Debugger is active!
+2025-05-08 22:28:58,298 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:29:34,532 - INFO - 127.0.0.1 - - [08/May/2025 22:29:34] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+2025-05-08 22:29:34,552 - INFO - 127.0.0.1 - - [08/May/2025 22:29:34] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:29:34,552 - INFO - 127.0.0.1 - - [08/May/2025 22:29:34] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-05-08 22:29:34,560 - INFO - 127.0.0.1 - - [08/May/2025 22:29:34] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=wJMO9G0T4OXZ61OiQmYS HTTP/1.1" 200 -
+2025-05-08 22:34:29,320 - INFO - 127.0.0.1 - - [08/May/2025 22:34:29] "POST / HTTP/1.1" 200 -
+2025-05-08 22:34:29,341 - INFO - 127.0.0.1 - - [08/May/2025 22:34:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:34:29,357 - INFO - 127.0.0.1 - - [08/May/2025 22:34:29] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:35:41,589 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:35:41,679 - INFO -  * Restarting with stat
+2025-05-08 22:37:06,299 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:37:06,457 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 22:37:06,457 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 22:37:06,457 - INFO -  * Restarting with stat
+2025-05-08 22:37:07,068 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:37:07,081 - WARNING -  * Debugger is active!
+2025-05-08 22:37:07,090 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:37:09,298 - INFO - 127.0.0.1 - - [08/May/2025 22:37:09] "GET / HTTP/1.1" 200 -
+2025-05-08 22:37:09,310 - INFO - 127.0.0.1 - - [08/May/2025 22:37:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:37:09,324 - INFO - 127.0.0.1 - - [08/May/2025 22:37:09] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:37:32,448 - ERROR - Error getting user-based recommendations: 'type'
+2025-05-08 22:37:32,449 - INFO - 127.0.0.1 - - [08/May/2025 22:37:32] "POST / HTTP/1.1" 200 -
+2025-05-08 22:37:32,465 - INFO - 127.0.0.1 - - [08/May/2025 22:37:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:37:32,472 - INFO - 127.0.0.1 - - [08/May/2025 22:37:32] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:38:39,060 - ERROR - Error getting user-based recommendations: 'type'
+2025-05-08 22:38:39,063 - INFO - 127.0.0.1 - - [08/May/2025 22:38:39] "POST / HTTP/1.1" 200 -
+2025-05-08 22:38:39,081 - INFO - 127.0.0.1 - - [08/May/2025 22:38:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:38:39,088 - INFO - 127.0.0.1 - - [08/May/2025 22:38:39] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:39:04,105 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:39:04,202 - INFO -  * Restarting with stat
+2025-05-08 22:39:05,006 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:39:05,022 - WARNING -  * Debugger is active!
+2025-05-08 22:39:05,030 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 22:39:31,479 - ERROR - Error getting user-based recommendations: 'type'
+2025-05-08 22:39:31,490 - INFO - 127.0.0.1 - - [08/May/2025 22:39:31] "POST / HTTP/1.1" 200 -
+2025-05-08 22:39:31,510 - INFO - 127.0.0.1 - - [08/May/2025 22:39:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:39:31,517 - INFO - 127.0.0.1 - - [08/May/2025 22:39:31] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:40:00,490 - ERROR - Error getting user-based recommendations: 'type'
+2025-05-08 22:40:00,491 - INFO - 127.0.0.1 - - [08/May/2025 22:40:00] "POST / HTTP/1.1" 200 -
+2025-05-08 22:40:00,511 - INFO - 127.0.0.1 - - [08/May/2025 22:40:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 22:40:00,517 - INFO - 127.0.0.1 - - [08/May/2025 22:40:00] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 22:40:12,164 - INFO -  * Detected change in '/Users/muhammedrasin/anime-recommender/pipeline/prediction_pipeline.py', reloading
+2025-05-08 22:40:12,257 - INFO -  * Restarting with stat
+2025-05-08 22:40:13,041 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 22:40:13,058 - WARNING -  * Debugger is active!
+2025-05-08 22:40:13,066 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 23:50:30,240 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 23:50:30,434 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5001
+ * Running on http://172.20.10.4:5001
+2025-05-08 23:50:30,434 - INFO - [33mPress CTRL+C to quit[0m
+2025-05-08 23:50:30,435 - INFO -  * Restarting with stat
+2025-05-08 23:50:31,030 - INFO - AnimeBucketRecommender initialized successfully
+2025-05-08 23:50:31,043 - WARNING -  * Debugger is active!
+2025-05-08 23:50:31,050 - INFO -  * Debugger PIN: 357-695-789
+2025-05-08 23:50:32,494 - INFO - 127.0.0.1 - - [08/May/2025 23:50:32] "GET / HTTP/1.1" 200 -
+2025-05-08 23:50:32,508 - INFO - 127.0.0.1 - - [08/May/2025 23:50:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 23:50:32,523 - INFO - 127.0.0.1 - - [08/May/2025 23:50:32] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 23:50:37,173 - ERROR - Error getting user-based recommendations: index -1 is out of bounds for axis 0 with size 0
+2025-05-08 23:50:37,180 - INFO - 127.0.0.1 - - [08/May/2025 23:50:37] "POST / HTTP/1.1" 200 -
+2025-05-08 23:50:37,199 - INFO - 127.0.0.1 - - [08/May/2025 23:50:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 23:50:37,207 - INFO - 127.0.0.1 - - [08/May/2025 23:50:37] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 23:51:41,347 - INFO - 127.0.0.1 - - [08/May/2025 23:51:41] "POST / HTTP/1.1" 200 -
+2025-05-08 23:51:41,367 - INFO - 127.0.0.1 - - [08/May/2025 23:51:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 23:51:41,375 - INFO - 127.0.0.1 - - [08/May/2025 23:51:41] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 23:53:35,264 - INFO - 127.0.0.1 - - [08/May/2025 23:53:35] "POST / HTTP/1.1" 200 -
+2025-05-08 23:53:35,286 - INFO - 127.0.0.1 - - [08/May/2025 23:53:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 23:53:35,294 - INFO - 127.0.0.1 - - [08/May/2025 23:53:35] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 23:59:01,380 - INFO - 127.0.0.1 - - [08/May/2025 23:59:01] "GET /search_anime?q=narut HTTP/1.1" 200 -
+2025-05-08 23:59:02,092 - INFO - 127.0.0.1 - - [08/May/2025 23:59:02] "GET /search_anime?q=naruto HTTP/1.1" 200 -
+2025-05-08 23:59:03,517 - INFO - 127.0.0.1 - - [08/May/2025 23:59:03] "GET /search_anime?q=Naruto HTTP/1.1" 200 -
+2025-05-08 23:59:05,748 - INFO - 127.0.0.1 - - [08/May/2025 23:59:05] "[32mPOST /add_to_bucket HTTP/1.1[0m" 302 -
+2025-05-08 23:59:05,760 - INFO - 127.0.0.1 - - [08/May/2025 23:59:05] "GET / HTTP/1.1" 200 -
+2025-05-08 23:59:05,773 - INFO - 127.0.0.1 - - [08/May/2025 23:59:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 23:59:05,784 - INFO - 127.0.0.1 - - [08/May/2025 23:59:05] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
+2025-05-08 23:59:08,585 - INFO - 127.0.0.1 - - [08/May/2025 23:59:08] "POST / HTTP/1.1" 200 -
+2025-05-08 23:59:08,597 - INFO - 127.0.0.1 - - [08/May/2025 23:59:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-05-08 23:59:08,606 - INFO - 127.0.0.1 - - [08/May/2025 23:59:08] "[33mGET /api/placeholder/1200/400 HTTP/1.1[0m" 404 -
