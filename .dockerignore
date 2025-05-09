@@ -1,0 +1,36 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Data
+*.csv
+*.tsv
+*.parquet
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.npy
+*.npz
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+
+# OS & editor-specific
+.DS_Store
+*.swp
+*.swo
+
+# Jupyter and others
+.ipynb_checkpoints/
+*.ipynb
