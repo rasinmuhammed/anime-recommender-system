@@ -1,4 +1,15 @@
 [core]
-    remote = myremote
-['remote "myremote"']
-    url = gs://rasin-dvc-bucket/
+    remote = gcp
+    checksum_jobs = 4
+    
+[cache]
+    type = hardlink,symlink
+
+[remote "gcp"]
+    url = gs://rasin-dvc-bucket
+    gdrive_use_service_account = true
+    jobs = 4
+    
+# Set up different cache directories for large files
+[cache "ssh"]
+    path = /mnt/jenkins_cache/dvc

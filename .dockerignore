@@ -1,36 +1,54 @@
-# Python cache
+# Version control
+.git
+.gitignore
+.github
+
+# DVC Files
+artifacts/raw
+.dvc
+
+# Development
+.venv
+venv
+*.pyc
 __pycache__/
 *.py[cod]
-*.pyo
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
 
-# Virtual environments
-.venv/
-venv/
-env/
+# Jenkins related
+Jenkinsfile
+custom_jenkins/
+.dockerignore
 
-# Data
-*.csv
-*.tsv
-*.parquet
-*.h5
-*.hdf5
-*.pkl
-*.joblib
-*.npy
-*.npz
+# Tests
+tests/
+.pytest_cache/
+.coverage
+htmlcov/
 
-# Git
-.git/
-.gitignore
+# Documentation
+docs/
+*.md
+LICENSE
 
-# Logs
+# Misc
+.vscode/
+.idea/
 *.log
-
-# OS & editor-specific
-.DS_Store
-*.swp
-*.swo
-
-# Jupyter and others
-.ipynb_checkpoints/
-*.ipynb

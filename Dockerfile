@@ -1,10 +1,10 @@
-FROM python:3.8.18-slim
+FROM python:3.8-slim AS builder
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
-# Install system dependencies required for Python packages like h5py, numpy, tensorflow, etc.
+# Install system dependencies for building packages
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     libatlas-base-dev \
@@ -12,28 +12,47 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libprotobuf-dev \
     protobuf-compiler \
     python3-dev \
-    pkg-config \             
+    pkg-config \
     git \
-    curl \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Upgrade pip to ensure modern build compatibility
-RUN pip install --upgrade pip
-
-# Set the working directory inside the container
+# Set working directory
 WORKDIR /app
 
-# Copy the code into the container
+# Copy only requirements first to leverage Docker cache
+COPY setup.py .
+COPY requirements.txt* ./
+
+# Install dependencies into a virtual environment
+RUN python -m venv /venv
+RUN /venv/bin/pip install --upgrade pip
+RUN /venv/bin/pip install --no-cache-dir -e .
+
+# Second stage: runtime image
+FROM python:3.8-slim
+
+# Copy virtual environment from builder stage
+COPY --from=builder /venv /venv
+
+# Set environment variables
+ENV PATH="/venv/bin:$PATH" \
+    PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
+
+# Install only runtime system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    libatlas-base-dev \
+    libhdf5-serial-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set working directory
+WORKDIR /app
+
+# Copy application code
 COPY . .
-
-# Install Python dependencies (editable mode for local project)
-RUN pip install --no-cache-dir -e .
-
-# (Optional) Train the model before running the app (or move to a separate stage in CI/CD)
-# RUN python pipeline/training_pipeline.py
 
 # Expose the Flask app's port
 EXPOSE 5001
 
-# Default command to run the application
+# Default command
 CMD ["python", "application.py"]
