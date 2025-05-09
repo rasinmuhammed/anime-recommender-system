@@ -8,6 +8,19 @@ pipeline {
         KUBECTL_AUTH_PLUGIN = '/usr/lib/google-cloud-sdk/bin'
     }
 
+    stage("Cleanup Workspace & Docker Cache") {
+            steps {
+                script {
+                    echo "Cleaning workspace and Docker cache"
+                    sh '''
+                    docker system prune -af || true
+                    rm -rf ${WORKSPACE}/*
+                    '''
+                }
+            }
+        }
+
+
     stages {
         stage("Cloning from Github"){
             steps{
@@ -59,8 +72,11 @@ pipeline {
                         gcloud auth activate-service-account --key-file=${GOOGLE_APPLICATION_CREDENTIALS}
                         gcloud config set project ${GCP_PROJECT}
                         gcloud auth configure-docker
-                        docker build -t gcr.io/${GCP_PROJECT}/anime-recommender-system:latest .
-                        docker push gcr.io/${GCP_PROJECT}/anime-recommender-system:latest
+
+                        docker buildx create --use || true
+                        docker buildx build --platform=linux/amd64 \
+                            -t gcr.io/${GCP_PROJECT}/anime-recommender-system:latest \
+                            --push .
                         '''
                     }
                 }

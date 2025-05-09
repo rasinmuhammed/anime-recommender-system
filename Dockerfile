@@ -1,4 +1,4 @@
-FROM python:3.8-slim
+FROM python:3.8.18-slim
 
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libprotobuf-dev \
     protobuf-compiler \
     python3-dev \
+    pkg-config \             
     git \
     curl \
     && apt-get clean && rm -rf /var/lib/apt/lists/*

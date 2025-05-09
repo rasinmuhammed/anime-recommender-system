@@ -6,433 +6,7 @@
   <title>Reccu - Hybrid Anime Recommender System</title>
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap');
-
-    :root {
-      --primary: #6A3DE8;
-      --primary-dark: #5835c4;
-      --secondary: #FF6B6B;
-      --accent: #FFD166;
-      --light: #F9F7FF;
-      --dark: #2E2A4F;
-      --gray: #9B95C9;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--light);
-      color: var(--dark);
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    /* Header Styles */
-    header {
-      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-      color: white;
-      position: relative;
-      overflow: hidden;
-      padding: 4rem 0;
-    }
-
-    .header-content {
-      position: relative;
-      z-index: 2;
-      text-align: center;
-    }
-
-    .header-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-image: url("/api/placeholder/1200/400");
-      opacity: 0.15;
-      background-size: cover;
-      background-position: center;
-      z-index: 1;
-    }
-
-    .logo {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .logo-icon {
-      font-size: 2.5rem;
-      margin-right: 0.75rem;
-      color: var(--accent);
-    }
-
-    .logo-text {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2.5rem;
-      font-weight: 800;
-      letter-spacing: -1px;
-    }
-
-    .tagline {
-      font-size: 1.25rem;
-      margin-bottom: 2rem;
-      opacity: 0.9;
-    }
-
-    /* Main Content */
-    main {
-      padding: 4rem 0;
-    }
-
-    .search-container {
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(46, 42, 79, 0.1);
-      padding: 2.5rem;
-      text-align: center;
-      max-width: 800px;
-      margin: -6rem auto 4rem;
-      position: relative;
-      z-index: 10;
-    }
-
-    .search-title {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.75rem;
-      margin-bottom: 1.5rem;
-      color: var(--primary);
-    }
-
-    .search-description {
-      color: var(--gray);
-      margin-bottom: 2rem;
-    }
-
-    .search-form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    @media (min-width: 768px) {
-      .search-form {
-        flex-direction: row;
-        justify-content: center;
-      }
-    }
-
-    .form-group {
-      flex-grow: 1;
-      position: relative;
-    }
-
-    .input-icon {
-      position: absolute;
-      left: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--gray);
-      font-size: 1.2rem;
-    }
-
-    input[type="number"] {
-      width: 100%;
-      padding: 1rem 1rem 1rem 3rem;
-      border: 2px solid #e0e0ff;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-family: 'Poppins', sans-serif;
-      transition: all 0.3s ease;
-    }
-
-    input[type="number"]:focus {
-      outline: none;
-      border-color: var(--primary);
-      box-shadow: 0 0 0 3px rgba(106, 61, 232, 0.1);
-    }
-
-    button {
-      background-color: var(--primary);
-      color: white;
-      font-family: 'Poppins', sans-serif;
-      font-weight: 600;
-      font-size: 1rem;
-      padding: 1rem 2rem;
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-    }
-
-    button:hover {
-      background-color: var(--primary-dark);
-      transform: translateY(-2px);
-      box-shadow: 0 5px 15px rgba(106, 61, 232, 0.2);
-    }
-
-    /* Recommendation Styles */
-    .recommendations {
-      margin-top: 3rem;
-      padding: 2rem;
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(46, 42, 79, 0.1);
-    }
-
-    .recommendations h2 {
-      color: var(--primary);
-      font-family: 'Montserrat', sans-serif;
-      margin-bottom: 1.5rem;
-      text-align: center;
-      font-size: 1.75rem;
-    }
-
-    .anime-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .anime-card {
-      background-color: white;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(46, 42, 79, 0.08);
-      transition: all 0.3s ease;
-    }
-
-    .anime-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 25px rgba(46, 42, 79, 0.12);
-    }
-
-    .anime-image {
-      height: 150px;
-      background-color: #e0e0ff;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .anime-details {
-      padding: 1.5rem;
-    }
-
-    .anime-title {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
-      color: var(--dark);
-      font-size: 1.1rem;
-    }
-
-    .anime-genre {
-      font-size: 0.85rem;
-      color: var(--gray);
-      margin-bottom: 1rem;
-    }
-
-    .anime-rating {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      color: var(--accent);
-    }
-
-    /* Features Section */
-    .features {
-      padding: 4rem 0;
-      background-color: #f3f0ff;
-    }
-
-    .section-title {
-      text-align: center;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 3rem;
-      color: var(--primary);
-    }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 2rem;
-    }
-
-    .feature {
-      text-align: center;
-      padding: 2rem;
-      background-color: white;
-      border-radius: 16px;
-      box-shadow: 0 5px 15px rgba(46, 42, 79, 0.05);
-      transition: all 0.3s ease;
-    }
-
-    .feature:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 25px rgba(46, 42, 79, 0.1);
-    }
-
-    .feature-icon {
-      font-size: 2.5rem;
-      color: var(--primary);
-      margin-bottom: 1.5rem;
-    }
-
-    .feature-title {
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--dark);
-    }
-
-    .feature-description {
-      color: var(--gray);
-      font-size: 0.95rem;
-    }
-
-    /* How It Works */
-    .how-it-works {
-      padding: 4rem 0;
-    }
-
-    .steps {
-      display: flex;
-      flex-direction: column;
-      gap: 3rem;
-    }
-
-    @media (min-width: 768px) {
-      .steps {
-        flex-direction: row;
-      }
-    }
-
-    .step {
-      flex: 1;
-      text-align: center;
-      position: relative;
-    }
-
-    .step-number {
-      background-color: var(--primary);
-      color: white;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 600;
-      margin: 0 auto 1.5rem;
-    }
-
-    .step-title {
-      font-weight: 600;
-      margin-bottom: 1rem;
-      color: var(--dark);
-    }
-
-    .step-description {
-      color: var(--gray);
-      font-size: 0.95rem;
-    }
-
-    @media (min-width: 768px) {
-      .step:not(:last-child)::after {
-        content: '';
-        position: absolute;
-        top: 20px;
-        right: -2rem;
-        width: 4rem;
-        height: 1px;
-        background-color: var(--gray);
-        opacity: 0.5;
-      }
-    }
-
-    /* Footer */
-    footer {
-      background-color: var(--dark);
-      color: white;
-      padding: 3rem 0;
-      text-align: center;
-    }
-
-    .footer-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 2rem;
-    }
-
-    .footer-logo {
-      font-family: 'Montserrat', sans-serif;
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: white;
-    }
-
-    .footer-links {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    .footer-link {
-      color: rgba(255, 255, 255, 0.7);
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .footer-link:hover {
-      color: white;
-    }
-
-    .social-links {
-      display: flex;
-      gap: 1.5rem;
-    }
-
-    .social-link {
-      color: white;
-      background-color: rgba(255, 255, 255, 0.1);
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: all 0.3s ease;
-    }
-
-    .social-link:hover {
-      background-color: var(--primary);
-      transform: translateY(-3px);
-    }
-
-    .copyright {
-      margin-top: 2rem;
-      color: rgba(255, 255, 255, 0.5);
-      font-size: 0.9rem;
-    }
-  </style>
+  <link rel="stylesheet" href="static/style.css"/>
 </head>
 <body>
   <!-- Header Section -->
@@ -454,46 +28,172 @@
   <!-- Main Content -->
   <main>
     <div class="container">
-      <!-- Search Form -->
-      <div class="search-container">
-        <h2 class="search-title">Find Your Next Anime Adventure</h2>
-        <p class="search-description">Enter your User ID to get personalized anime recommendations based on your taste</p>
+      <!-- Recommendation Methods -->
+      <div class="recommendation-methods">
+        <!-- User ID Method -->
+        <div class="method-block">
+          <h2 class="method-title">User ID Method</h2>
+          <p class="method-description">Enter your User ID to get personalized anime recommendations based on your taste</p>
+          
+          <form action="/" method="POST" class="search-form">
+            <div class="form-group">
+              <i class="fas fa-user input-icon"></i>
+              <input type="number" id="userID" name="userID" placeholder="Your User ID" required>
+            </div>
+            <button type="submit">
+              <i class="fas fa-search"></i>
+              Get Recommendations
+            </button>
+          </form>
+        </div>
         
-        <form action="/" method="POST" class="search-form">
-          <div class="form-group">
-            <i class="fas fa-user input-icon"></i>
-            <input type="number" id="userID" name="userID" placeholder="Your User ID" required>
+        <!-- Anime Bucket Method -->
+        <div class="method-block">
+          <h2 class="method-title">Anime Bucket Method</h2>
+          <p class="method-description">Add your favorite anime titles to get similar recommendations</p>
+          
+          <div class="anime-search-container">
+            <form action="/add_to_bucket" method="POST" id="addAnimeForm">
+              <div class="form-group">
+                <i class="fas fa-search input-icon"></i>
+                <input type="text" id="animeSearch" placeholder="Search for an anime" autocomplete="off">
+                <input type="hidden" id="selectedAnime" name="anime_name">
+              </div>
+              <div class="autocomplete-results" id="autocompleteResults"></div>
+              <button type="submit" id="addAnimeButton" disabled>
+                <i class="fas fa-plus"></i>
+                Add to Bucket
+              </button>
+            </form>
           </div>
-          <button type="submit">
-            <i class="fas fa-search"></i>
-            Get Recommendations
-          </button>
-        </form>
+          
+          <!-- Anime Bucket -->
+          <div class="anime-bucket">
+            <h3 class="bucket-title">Your Anime Bucket</h3>
+            
+            <div class="bucket-items" id="bucketItems">
+              {% if anime_bucket %}
+                {% for anime in anime_bucket %}
+                <div class="bucket-item">
+                  <span class="bucket-item-name">{{ anime }}</span>
+                  <form action="/remove_from_bucket" method="POST" style="display: inline;">
+                    <input type="hidden" name="anime_name" value="{{ anime }}">
+                    <button type="submit" class="remove-bucket-item">
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </form>
+                </div>
+                {% endfor %}
+              {% else %}
+                <p class="no-items-message">No anime added yet. Search and add your favorites!</p>
+              {% endif %}
+            </div>
+            
+            <div class="bucket-actions">
+              <form action="/clear_bucket" method="POST">
+                <button type="submit" class="bucket-button clear-button" {% if not anime_bucket %}disabled{% endif %}>
+                  <i class="fas fa-trash"></i>
+                  Clear Bucket
+                </button>
+              </form>
+              
+              <form action="/" method="POST">
+                <input type="hidden" name="get_bucket_recommendations" value="true">
+                <button type="submit" class="bucket-button" {% if not anime_bucket %}disabled{% endif %}>
+                  <i class="fas fa-magic"></i>
+                  Get Recommendations
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <!-- Recommendations Section -->
-      {% if recommendations %}
-      <div class="recommendations">
-        <h2>Recommendations for User {{ userID }}</h2>
-        <div class="anime-grid">
-          {% for anime in recommendations %}
-          <div class="anime-card">
-            <div class="anime-image">
-              <img src="/api/placeholder/250/150" alt="{{ anime }}" style="width: 100%; height: 100%; object-fit: cover;">
-            </div>
-            <div class="anime-details">
-              <h3 class="anime-title">{{ anime }}</h3>
-              <p class="anime-genre">Fantasy, Adventure</p>
-              <div class="anime-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
+      <!-- User-Based Recommendations Section -->
+        {% if recommendations %}
+        <div class="recommendations" style="padding: 1rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Recommendations for User {{ userID }}</h2>
+          <div class="anime-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+            {% for anime in recommendations %}
+            {% if 'Hentai' not in anime.genres %}
+            <div class="anime-card" style="
+              background: #fff;
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+              display: flex;
+              flex-direction: column;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 12px 28px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'">
+              
+              <!-- Image -->
+              <div class="anime-image" style="height: 200px; overflow: hidden;">
+                <img src="https://cdn.pixabay.com/photo/2021/01/07/08/51/anime-5896567_1280.png" alt="{{ anime.name }}" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              
+              <!-- Details -->
+              <div class="anime-details" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 700;">{{ anime.anime_name }}</h3>
+                <p style="color: #6b7280; font-style: italic;">{{ anime.Genres or 'Unknown Genre' }}</p>
+
+                <div style="display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.95rem;">
+                  <p><strong>Similarity Score:</strong> <span style="color: #10b981;">{{ anime.score | round(2) }}</span></p>
+                </div>
+
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #374151;">
+                  {{ (anime.Synopsis or 'No synopsis available')[:220] }}{{ '...' if anime.synopsis and anime.synopsis|length > 220 }}
+                </p>
               </div>
             </div>
+            {% endif %}
+            {% endfor %}
           </div>
-          {% endfor %}
+        </div>
+        {% endif %}
+
+      
+      <!-- Bucket-Based Recommendations Section -->
+      {% if bucket_recommendations %}
+        <div class="recommendations" style="padding: 1rem;">
+          <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Recommendations Based on Your Anime Bucket</h2>
+          <div class="anime-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+            {% for anime in bucket_recommendations %}
+            {% if 'Hentai' not in anime.genres %}
+            <div class="anime-card" style="
+              background: #fff;
+              border-radius: 16px;
+              overflow: hidden;
+              box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+              display: flex;
+              flex-direction: column;
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+            " onmouseover="this.style.transform='scale(1.02)'; this.style.boxShadow='0 12px 28px rgba(0,0,0,0.12)'" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 20px rgba(0,0,0,0.08)'">
+              
+              <!-- Image -->
+              <div class="anime-image" style="height: 200px; overflow: hidden;">
+                <img src="https://cdn.pixabay.com/photo/2021/01/07/08/51/anime-5896567_1280.png"  alt="{{ anime.name }}" style="width: 100%; height: 100%; object-fit: cover;">
+              </div>
+              
+              <!-- Details -->
+              <div class="anime-details" style="padding: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                <h3 style="font-size: 1.25rem; font-weight: 700;">{{ anime.name }}</h3>
+                <p style="color: #6b7280; font-style: italic;">{{ anime.genres or 'Unknown Genre' }}</p>
+
+                <div style="display: flex; flex-direction: column; gap: 0.25rem; font-size: 0.95rem;">
+                  <p><strong>Episodes:</strong> {{ anime.episodes }}</p>
+                  <p><strong>Type:</strong> {{ anime.type }}</p>
+                  <p><strong>Similarity Score:</strong> <span style="color: #10b981;">{{ anime.similarity | round(2) }}</span></p>
+                </div>
+
+                <p style="margin-top: 0.5rem; font-size: 0.9rem; color: #374151;">
+                  {{ (anime.synopsis or 'No synopsis available')[:220] }}{{ '...' if anime.synopsis and anime.synopsis|length > 220 }}
+                </p>
+              </div>
+
+            </div>
+            {% endif %}
+            {% endfor %}
+
         </div>
       </div>
       {% endif %}
@@ -532,13 +232,13 @@
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
-            <h3 class="step-title">Enter User ID</h3>
-            <p class="step-description">Provide your unique user identifier to access your profile data</p>
+            <h3 class="step-title">Choose Your Method</h3>
+            <p class="step-description">Use your User ID or create an anime bucket with your favorites</p>
           </div>
           <div class="step">
             <div class="step-number">2</div>
             <h3 class="step-title">Process Your Taste</h3>
-            <p class="step-description">Our algorithm analyzes your watch history and preferences</p>
+            <p class="step-description">Our algorithm analyzes your preferences and finds patterns</p>
           </div>
           <div class="step">
             <div class="step-number">3</div>
@@ -574,5 +274,88 @@
       </div>
     </div>
   </footer>
+
+  <!-- JavaScript for Anime Search Autocomplete -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const animeSearchInput = document.getElementById('animeSearch');
+      const autocompleteResults = document.getElementById('autocompleteResults');
+      const selectedAnimeInput = document.getElementById('selectedAnime');
+      const addAnimeButton = document.getElementById('addAnimeButton');
+      const addAnimeForm = document.getElementById('addAnimeForm');
+      
+      // Function to fetch anime suggestions
+      async function fetchAnimeSuggestions(query) {
+        if (query.length < 2) {
+          autocompleteResults.innerHTML = '';
+          autocompleteResults.classList.remove('active');
+          return;
+        }
+        
+        try {
+          const response = await fetch(`/search_anime?q=${encodeURIComponent(query)}`);
+          const data = await response.json();
+          
+          if (data.length > 0) {
+            displaySuggestions(data);
+          } else {
+            autocompleteResults.innerHTML = '<div class="autocomplete-item">No results found</div>';
+            autocompleteResults.classList.add('active');
+          }
+        } catch (error) {
+          console.error('Error fetching anime suggestions:', error);
+        }
+      }
+      
+      // Function to display suggestions
+      function displaySuggestions(suggestions) {
+        autocompleteResults.innerHTML = '';
+        
+        suggestions.forEach(anime => {
+          const item = document.createElement('div');
+          item.className = 'autocomplete-item';
+          item.textContent = anime;
+          
+          item.addEventListener('click', function() {
+            animeSearchInput.value = anime;
+            selectedAnimeInput.value = anime;
+            autocompleteResults.innerHTML = '';
+            autocompleteResults.classList.remove('active');
+            addAnimeButton.disabled = false;
+          });
+          
+          autocompleteResults.appendChild(item);
+        });
+        
+        autocompleteResults.classList.add('active');
+      }
+      
+      // Add event listeners
+      let debounceTimer;
+      animeSearchInput.addEventListener('input', function() {
+        clearTimeout(debounceTimer);
+        addAnimeButton.disabled = true;
+        
+        debounceTimer = setTimeout(() => {
+          fetchAnimeSuggestions(this.value);
+        }, 300);
+      });
+      
+      // Close autocomplete when clicking outside
+      document.addEventListener('click', function(event) {
+        if (!animeSearchInput.contains(event.target) && !autocompleteResults.contains(event.target)) {
+          autocompleteResults.classList.remove('active');
+        }
+      });
+      
+      // Submit form handler
+      addAnimeForm.addEventListener('submit', function(event) {
+        if (!selectedAnimeInput.value) {
+          event.preventDefault();
+          alert('Please select an anime from the suggestions');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
