@@ -30,7 +30,7 @@ COPY . .
 RUN pip install --no-cache-dir -e .
 
 # (Optional) Train the model before running the app (or move to a separate stage in CI/CD)
-RUN python pipeline/training_pipeline.py
+# RUN python pipeline/training_pipeline.py
 
 # Expose the Flask app's port
 EXPOSE 5001
