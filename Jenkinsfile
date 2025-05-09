@@ -52,19 +52,19 @@ pipeline {
             }
         }
 
-        // stage("DVC Pull") {
-        //     steps {
-        //         withCredentials([file(credentialsId: 'gcp-key2', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
-        //             script {
-        //                 echo "Pulling data from DVC"
-        //                 sh '''
-        //                 . ${VENV_DIR}/bin/activate
-        //                 dvc pull
-        //                 '''
-        //             }
-        //         }
-        //     }
-        // }
+        stage("DVC Pull") {
+            steps {
+                withCredentials([file(credentialsId: 'gcp-key2', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
+                    script {
+                        echo "Pulling data from DVC"
+                        sh '''
+                        . ${VENV_DIR}/bin/activate
+                        dvc pull
+                        '''
+                    }
+                }
+            }
+        }
 
         stage("Build and Push Docker Image to GCR") {
             steps {
