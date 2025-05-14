@@ -291,9 +291,11 @@ The project includes a complete CI/CD pipeline using Jenkins that handles everyt
 
 </details>
 
-## 📄 License
+## 📄 Note
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+
+
+This project is not yet deployed as I was facing some issues in deploying it to GCR due to the large file sizes. However, the build is production ready, and I am working to deploy it soon.
 
 ## 🙏 Acknowledgements
 
